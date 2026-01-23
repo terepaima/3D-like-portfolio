@@ -3,6 +3,7 @@ import Card from "../components/Card"
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { FrameWorks } from "../components/Frameworks";
+import { TextHighlighter } from "../components/TextHighlighter";
 const About = () => {
     const grid2Container = useRef();
   return (
@@ -17,7 +18,7 @@ const About = () => {
                 />
                 <div className="z-10">
                     <p className="headtext">Hi, I'm Isaac</p>
-                    <p className="subtext">put brief description</p>
+                    <p className="subtext">Mid-Senior Frontend Engineer | <TextHighlighter action="underline" color="#fc9fff">React & Next.js</TextHighlighter> | Building scalable, high-performance web products | 7+ years experience</p>
                 </div>
                 <div className="aboe inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo"/>
             </div>
@@ -27,14 +28,14 @@ const About = () => {
                     <p className="flex items-end text-5xl text-gray-500">
                         CODE IS CRAFT
                     </p>
-                    <Card text="GRASP" style={{rotate: "75deg", top: "30%", left: "20%"}} containerRef={grid2Container}/>
-                    <Card text="SOLID" style={{rotate: "-30deg", top: "60%", left: "45%"}} containerRef={grid2Container}/>
-                    <Card text="Design Patterns" style={{rotate: "90deg", bottom: "30%", left: "70%"}} containerRef={grid2Container}/>
-                    <Card text="Design Principles" style={{rotate: "-75deg", top: "50%", left: "0%"}} containerRef={grid2Container}/>
-                    <Card text="SRP" style={{rotate: "20deg", top: "10%", left: "38%"}} containerRef={grid2Container}/>
-                    <Card image="assets/logos/csharp-pink.png" style={{rotate: "30deg", top: "70%", left: "70%"}} containerRef={grid2Container}/>
-                    <Card image="assets/logos/dotnet-pink.png" style={{rotate: "-45deg", top: "70%", left: "20%"}} containerRef={grid2Container}/>
-                    <Card image="assets/logos/blazor-pink.png" style={{rotate: "-45deg", top: "5%", left: "10%"}} containerRef={grid2Container}/>
+                    <Card text="REACT" style={{rotate: "45deg", top: "30%", left: "20%"}} containerRef={grid2Container}/>
+                    <Card text="AGILE" style={{rotate: "-30deg", top: "60%", left: "45%"}} containerRef={grid2Container}/>
+                    <Card text="+VALUE" style={{rotate: "-10deg", bottom: "30%", left: "70%"}} containerRef={grid2Container}/>
+                    <Card text="Design Principles" style={{rotate: "-55deg", top: "50%", left: "0%"}} containerRef={grid2Container}/>
+                    {/* <Card text="SRP" style={{rotate: "20deg", top: "10%", left: "38%"}} containerRef={grid2Container}/> */}
+                    <Card image="assets/logos/react.svg" style={{rotate: "30deg", top: "70%", left: "70%"}} containerRef={grid2Container}/>
+                    <Card image="assets/logos/threejs.svg" style={{rotate: "-45deg", top: "70%", left: "20%"}} containerRef={grid2Container}/>
+                    <Card image="assets/logos/iot.png" style={{rotate: "-45deg", top: "5%", left: "10%"}} containerRef={grid2Container}/>
                 </div>
             </div>
             {/* grid 3 */}
@@ -42,7 +43,7 @@ const About = () => {
                 <div className="z-10 w-[50%]">
                     <p className="headtext">Time Zone</p>
                     <p className="subtext">
-                        I'm based in Spain, open to remote work worldwide
+                        I'm based in <TextHighlighter action="underline" color="#fc9fff">Madrid</TextHighlighter>, open to remote work worldwide
                     </p>
                 </div>
                 <figure className="absolute left-[30%] top-[10%]">

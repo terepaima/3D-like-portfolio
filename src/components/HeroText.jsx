@@ -1,4 +1,3 @@
-import React from 'react'
 import { FlipWords } from './FlipWords'
 import {motion} from "motion/react"
 
@@ -18,7 +17,7 @@ const HeroText = () => {
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: 1 }}
-            >Hiii</motion.h1>
+            >Hi, I'm Isaac</motion.h1>
             <div className='flex flex-col items-start'>
                 <motion.p
                     className='text-5xl font-medium text-neutral-300'
@@ -26,7 +25,7 @@ const HeroText = () => {
                     initial="hidden"
                     animate="visible"
                     transition={{ delay: 1.2 }}>
-                    A developer < br/> Dedicating to crafting
+                    A developer < br/> Dedicated to crafting
                 </motion.p>
                 <motion.div
                     variants={variants}
@@ -40,8 +39,9 @@ const HeroText = () => {
                     variants={variants}
                     initial="hidden"
                     animate="visible"
-                    transition={{ delay: 1.8 }}
-                    >Web Solutions</motion.p>
+                    transition={{ delay: 1.8 }}>
+                    Web Solutions
+                </motion.p>
             </div>
         </div>
         {/*Mobile View */}

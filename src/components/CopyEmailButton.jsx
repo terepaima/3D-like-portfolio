@@ -2,21 +2,21 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 const CopyEmailButton = () => {
     const [copied, setCopied] = useState(false);
-    const email = "your Email Address"
+    const email = "terepaimawork@gmail.com"
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(email);
         setCopied(true);
 
         setTimeout(() => {
-            setCopied(false)
+            setCopied(false);
         }, 2000);
     }
   return (
     <motion.button 
         className="relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[12rem] cursor-pointer overflow-hidden"
         onClick={copyToClipboard}
-        whileHover={{ y: -5 }}
+        whileHover={{ y: -5, "border-bottom": "3px solid #c9c9c9" }}
         whileTap={{ scale: 1.05 }}
     >
             <AnimatePresence mode="wait">
@@ -30,7 +30,7 @@ const CopyEmailButton = () => {
                         key="copied"
                     >
                         <img src="assets/copy-done.svg" className="w-5"/>
-                        Email has been copied
+                        Copied!
                     </motion.p>
                     ) : (
                     <motion.p

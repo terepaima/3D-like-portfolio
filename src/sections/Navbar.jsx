@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 function Navigation() {
     return (
-        <ul className="nav-ul">
+        <ul className="nav-ul pr-5">
             <li className="nav-li">
                 <a className="nav-lnk" href="#home">Home</a>
             </li>

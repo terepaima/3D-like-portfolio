@@ -12,11 +12,9 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
-      <Projects />
+      {/* <Projects /> */}
       <Experiences />
-      <Testimonial />
-      <section className="min-h-screen"/>
-
+      {/* <Testimonial /> */}
     </div>
   )
 }
